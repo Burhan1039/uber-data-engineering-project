@@ -11,8 +11,11 @@ Machine_Learning - Pandas
 Google Cloud Platform (GCP)
 
 1- Cloud Storage
+
 2- Compute Engine
+
 3- BigQuery (Data Warehouse)
+
 4- Looker Studio
 
 # Dataset Used
