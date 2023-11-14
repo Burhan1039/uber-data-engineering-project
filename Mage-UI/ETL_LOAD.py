@@ -19,7 +19,7 @@ def export_data_to_big_query(data, **kwargs) -> None:
     config_path = path.join(get_repo_path(), 'io_config.yaml')
     config_profile = 'default'
 
-    for key,value in data.items():
+    for (key,value) in data.items():
         table_id = 'datawithburhan.uber_data_engineering_yt.{}'.format(key)
         BigQuery.with_config(ConfigFileLoader(config_path, config_profile)).export(
             DataFrame(value),
